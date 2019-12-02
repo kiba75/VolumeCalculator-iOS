@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List {
+            ShapeListItem(shape: Sphere(radius: 5))
+            ShapeListItem(shape: Sphere(radius: 5))
+            ShapeListItem(shape: Sphere(radius: 5))
+            ShapeListItem(shape: Sphere(radius: 5))
+        }
     }
 }
 
